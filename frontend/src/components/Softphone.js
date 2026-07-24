@@ -3,8 +3,8 @@ import { UserAgent, Registerer, Inviter, Invitation, SessionState } from 'sip.js
 import { T } from '../theme';
 import { Icon } from './Icons';
 
-const WS_SERVER = `wss://${window.location.hostname}/ws`;
-const SIP_DOMAIN = window.location.hostname;
+const WS_SERVER = 'wss://173.249.4.136/ws';
+const SIP_DOMAIN = '173.249.4.136';
 const ICE = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }, { urls: 'stun:stun1.l.google.com:19302' }] };
 
 function attachAudio(session, audioEl) {
