@@ -1,4 +1,4 @@
-const API = '';
+const API = 'https://173.249.4.136';
 
 export const request = async (path, options = {}) => {
   const token = localStorage.getItem('token');
@@ -14,7 +14,7 @@ export const request = async (path, options = {}) => {
 
     if (res.status === 401) {
       localStorage.removeItem('token');
-      window.location.href = '/';
+      window.location.href = '/mogala/';
       return { error: 'Session expired' };
     }
 
